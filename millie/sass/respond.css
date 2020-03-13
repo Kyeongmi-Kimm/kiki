@@ -1,0 +1,94 @@
+@media (min-width:415px) and (max-width:736px) {
+    #header .headIco {display: block;}
+    #header .resNav.on {width: 100%; margin: 50px auto; z-index: 10;}
+    #header .resNav dt {
+        height:40px;
+        background-color:#a551f8;
+        font-size: 18px;
+        font-weight: 100;
+        color:#fff;
+        line-height:40px;
+        padding-left:20px;
+        cursor:pointer;
+        }
+    #header .resNav dd {
+        height: 35px;
+        background-color: #f7f8fa;
+        }
+    #header .resNav dd a {
+        padding-left:25px;
+        cursor: pointer;
+        line-height: 35px;
+        color: #333;
+        display: block;
+        text-decoration: none;
+    }
+    #header .resNav dd a:hover {
+        background-color: #aaaaaa;        
+    }
+    #header .form {
+        position: absolute;
+        top: 10px;
+        right: 0;
+        padding-right: 90px;
+        }
+    #header .form input {
+        width: 160px;
+        height: 25px;
+        border: 1px solid #ccc;
+        }
+    #header .nav {display: none;}
+    #visual {padding: 0 25px;}
+    #content1 {padding: 0 25px;}
+    #content2 {padding: 50px 25px 0;}
+    #content3 {padding: 50px 25px 0;}
+    #content3 .tabs {margin: 10px 25px;}
+    #content3 .button {margin: 10px 25px;}
+}
+@media (min-width:0px) and (max-width:414px){
+    #header .headIco {display: block;}
+    #header .resNav.on {width: 100%; margin: 50px auto; z-index: 10;}
+    #header .resNav dt {
+        height:40px;
+        background-color:#a551f8;
+        font-size: 18px;
+        font-weight: 100;
+        color:#fff;
+        line-height:40px;
+        padding-left:20px;
+        cursor:pointer;
+        }
+    #header .resNav dd { 
+        height: 35px;
+        background-color: #f7f8fa;
+        }
+    #header .resNav dd a {
+        padding-left:25px;
+        cursor: pointer;
+        line-height: 35px;
+        color: #333;
+        display: block;
+        text-decoration: none;
+    }
+    #header .resNav dd a:hover {
+        background-color: #aaaaaa;        
+    }
+    #header .form {
+        position: absolute;
+        top: 10px;
+        right: 0;
+        padding-right: 90px;
+    }
+    #header .form input {
+        width: 160px;
+        height: 25px;
+        border: 1px solid #ccc;
+    }
+    #header .nav {display: none;} 
+    #visual {padding: 0 25px;}
+    #content1 {padding: 0 25px;}
+    #content2 {padding: 50px 25px 0;}
+    #content3 {padding: 50px 25px 0;}
+    #content3 .tabs {margin: 0 25px;}
+    #content3 .button {margin: 0 25px;}
+}

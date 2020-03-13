@@ -1,0 +1,13 @@
+/* common */
+html,body{width:100%;height:100%}
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding:0}
+img,fieldset{border:0}
+img{vertical-align:top}
+ul,ol{list-style:none}
+em,address{font-style:normal}
+hr{display: none;}
+a{text-decoration:none}
+a:hover,a:active,a:focus{text-decoration:underline}
+legend,.blind{position:absolute;left:0;top:-9999em;overflow: hidden}
+.skip a{display:block;position:absolute;left:0;top:-9999em;z-index:9999;width:100%;background-color:#fad207;color:#fff;font: 100 16px/1.8 'Noto Sans KR',sans-serif;text-align:center;text-decoration: none;}
+.skip a:focus{top:0}
