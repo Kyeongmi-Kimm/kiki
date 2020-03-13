@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>회원가입(step03 회원정보 입력)</title>
+        <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+        <link rel="icon" href="../favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="../css/nanet.css">
+</head>
+<body>
+    <dl class="skip">
+        <dt class="blind"><strong>바로가기메뉴</strong></dt>
+        <dd><a href="#contents">본문 바로가기</a></dd>
+    </dl>
+    <hr>
+    <div id="wrap">
+        <!-- header -->
+        <div id="header">
+            <div class="util">
+                <h1 class="logo"><a href="#"><img src="../img/logo.png" alt="국회도서관"></a></h1>
+                <ul class="utilL clearfix">
+                    <li><a href="#">로그인</a> |</li>
+                    <li><a href="#">회원가입</a> |</li>
+                    <li><a href="#">비회원 로그인</a> |</li>
+                    <li><a href="#">사이트맵</a> |</li>
+                    <li><a href="#">ENG</a> |</li>
+                    <li><a href="#">네이버블로그</a></li>
+                </ul>
+                <div class="utilR">
+                    <div class="search">
+                        <input type="text" id="searchR" name="R_searchR" title="홈페이지내 검색" placeholder="홈페이지내 검색" value="" class="utilSearch">
+                    </div>
+                    <div class="btn">
+                        <button type="submit">검색</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //header -->
+        <!-- gnb -->
+        <div id="gnb">
+            <div class="inn">
+                <ul class=" clearfix">
+                    <li><a href="#">자료검색</a></li>
+                    <li><a href="#">의정콘텐츠</a></li>
+                    <li><a href="#">국가인프라데이터</a></li>
+                    <li><a href="#">공유 · 협력 네트워크</a></li>
+                    <li><a href="#">이용자마당</a></li>
+                    <li><a href="#">도서관이용</a></li>
+                    <li><a href="#">도서관소개</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- //gnb -->
+        <!-- contents -->
+        <div id="contents">
+            <div class="inn clearfix">
+                <div class="aside">
+                    <h2>My page</h2>
+                    <ul>
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                        <li><a href="#">아이디찾기/비밀번호변경</a></li>
+                        <li><a href="#">모바일 간편열람증</a></li>
+                        <li><a href="#">학생증 시범운영</a></li>
+                    </ul>
+                </div>
+                <div class="content clearfix">
+                    <div class="contentTop clearfix">
+                        <h2 class="memberH2">회원가입</h2>
+                        <ul>
+                            <li class="c_t1"><a href="#">홈</a></li>
+                            <li class="c_t2"><a href="#">My page</a></li>
+                            <li class="on"><a href="#">회원가입</a></li>
+                        </ul>
+                    </div>
+                    <div class="contentBody clearfix">
+                        <div class="box">
+                            <img src="../img/membershipStep03.png" alt="step02 본인확인(실명인증)">
+                        </div>
+                        <h3>기본정보 입력</h3>
+                        <h4><strong>*</strong> 표시는 필수 입력사항 입니다.</h4>
+                        <form action="#" method="POST" novalidate accept-charset="utf-8">
+                            <div class="form_area">
+                                <fieldset>
+                                    <legend>회원정보 입력하기</legend>
+                                    <div class="field">
+                                        <label for="u_name" class="label"><em>*</em>이름</label>
+                                        <div class="inp_area">
+                                            <input type="text" id="u_name" name="u_name" placeholder="나의 이름" value="" class="inp_field">
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <label for="u_id" class="label"><em>*</em>아이디</label>
+                                        <div class="inp_area">
+                                            <input type="text" id="u_id" name="u_id" placeholder="나의 아이디" value="" class="inp_field">
+                                            <button type="button" class="btn_button">중복확인</button>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <label for="u_pw" class="label lh80"><em>*</em>비밀번호</label>
+                                        <div class="inp_area">
+                                            <input type="password" id="u_pw" name="u_pw" placeholder="4~12자리의 비밀번호" value="" class="inp_field">
+                                            <p class="desc pt10 lh20">* 문자, 숫자 상관없이 4~12자리 가능</p>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <label for="u_pw2" class="label"><em>*</em>비밀번호 확인</label>
+                                        <div class="inp_area">
+                                            <input type="password" id="u_pw2" name="u_pw2" placeholder="한번 더 입력하세요" value="" class="inp_field">
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <span class="label lh80"><em>*</em>이메일</span>
+                                        <div class="inp_area">
+                                            <label for="u_mail" class="blind">이메일 아이디 입력</label>
+                                            <input type="text" id="u_mail" name="u_mail" placeholder="이메일을 입력하세요" value="" class="inp_field"> 
+                                            @
+                                            <label for="u_host" class="blind">이메일 호스트 입력</label>
+                                            <input type="text" id="u_host" name="u_host" placeholder="나머지 주소를 입력하세요" value="" class="inp_field"> 
+                                            <label for="u_host2" class="blind">이메일 호스트 선택</label>
+                                            <select name="u_host2" id="u_host2" class="inp_field">
+                                                <option value="">직접입력</option>
+                                                <option value="naver.com">naver.com</option>
+                                                <option value="hanmail.net">hanmail.net</option>
+                                                <option value="gmail.com">gmail.com</option>
+                                            </select>
+                                            <p class="desc pt10">* 실제 사용중인 이메일 주소가 아니면 비밀번호 분실 시 찾을 수 없습니다.</p>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <span class="label">직업군</span>
+                                        <div class="inp_area lh30">
+                                            <input type="radio" id="u_job" name="job" value="" checked>
+                                            <label for="u_job">무직</label>
+                                            <input type="radio" id="u_job2" name="job" value="">
+                                            <label for="u_job2">학생</label>
+                                            <input type="radio" id="u_job3" name="job" value="">
+                                            <label for="u_job3">회사원</label>
+                                            <input type="radio" id="u_job4" name="job" value="">
+                                            <label for="u_job4">공무원</label>
+                                            <input type="radio" id="u_job5" name="job" value="">
+                                            <label for="u_job5">전문직</label>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <span class="label"><em>*</em>연락처</span>
+                                        <div class="inp_area">
+                                            <label for="u_tel" class="blind">서비스 번호 선택</label>
+                                            <select name="u_tel" id="u_tel" class="inp_field w70">
+                                                <option value="010">010</option>
+                                                <option value="011">011</option>
+                                                <option value="016">016</option>
+                                                <option value="018">018</option>
+                                                <option value="019">019</option>
+                                            </select> - 
+                                            <label for="u_tel2" class="blind">전화번호 앞 4자리</label>
+                                            <input type="text" id="u_tel2" name="u_tel2" placeholder="0000" value="" class="inp_field w120"> -
+                                            <label for="u_tel3" class="blind">전화번호 뒤 4자리</label>
+                                            <input type="text" id="u_tel3" name="u_tel3" placeholder="0000" value="" class="inp_field w120">
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <span class="label">메일 수신동의</span>
+                                        <div class="inp_area">
+                                            <input type="radio" id="rec_ok" name="rec" value="ok">
+                                            <label for="rec_ok" class="label_rdo">수신함</label>
+                                            <input type="radio" id="rec_no" name="rec" value="no" checked>
+                                            <label for="rec_no" class="label_rdo">수신하지 않음</label>
+                                            <p class="desc">* 메일링 서비스를 신청하시면 새로운 자료가 업데이트 될 때마다 소식을 알려드립니다.</p>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <label for="rec_ok2" class="label">SMS 수신동의</label>
+                                        <div class="inp_area">
+                                            <input type="radio" id="rec_ok2" name="rec2" value="ok">
+                                            <label for="rec_ok2">수신함</label>
+                                            <input type="radio" id="rec_no2" name="rec2" value="no" checked>
+                                            <label for="rec_no2">수신하지 않음</label>
+                                            <p class="desc">* SMS 서비스를 신청하시면 새로운 자료가 업데이트 될 때마다 소식을 알려드립니다.</p>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <label for="u_file" class="label"><em>*</em>장기열람증 사진 등록</label>
+                                        <div class="inp_area lh30">
+                                            <input type="file" id="u_file" name="u_file" title="파일첨부를 하세요" multiple>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <label for="u_color" class="label"><em>*</em>장기열람증 색상 선택</label>
+                                        <div class="inp_area lh30">
+                                            <input type="color" id="u_color" name="u_color" value="#ff0000">
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <label for="u_date" class="label"><em>*</em>장기열람증 수령 일 선택</label>
+                                        <div class="inp_area lh30">
+                                            <input type="date" id="u_date" name="u_date" min="2019-01-01" max="2020-12-31" value="2019-11-1">
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <label for="comment" class="label lh103">기타 사항</label>
+                                        <div class="inp_area">
+                                            <textarea name="comment" id="comment" cols="50" rows="6" placeholder="의견을 입력하세요" style="resize: none"></textarea>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            <div class="btn_area03">
+                                <ul>
+                                    <li><a href="../html/step04.html">확인</a></li>
+                                    <li><a href="../html/step04.html">취소</a></li>
+                                </ul>
+                            </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //contents -->
+        <!-- footer -->
+        <div id="footer">
+            <div class="footerTop clearfix">
+            <ul>
+                <li><a href="#">개인정보처리방침</a> | </li>
+                <li><a href="#">이메일수집거부</a></li>       
+            </ul>
+            <fieldset>
+                <legend>관련사이트</legend>
+                <div class="siteLink">
+                    <select name="siteLink" id="siteLink" title="관련사이트 바로가기" class="btmSiteLink">
+                        <option value="대한민국 국회">대한민국 국회</option>
+                        <option value="국회사무처">국회사무처</option>
+                        <option value="국회예산정책처">국회예산정책처</option>
+                        <option value="국회입법조사처">국회입법조사처</option>
+                        <option value="대한민국 국회">국회미래연구원</option>
+                        <option value="대한민국 국회">선거정보도서관</option>
+                        <option value="대한민국 국회">한국학술지인용색인</option>
+                        <option value="대한민국 국회">국가전자도서관</option>
+                        <option value="대한민국 국회">국가정책연구포털</option>
+                    </select>
+                </div>
+                <button type="button">이동</button>
+            </fieldset>
+            </div>
+            <div class="footerBtm clearfix">
+                <div class="copyright">
+                    <address>국회도서관 - 서울특별시 영등포구 의사당대로 1 (여의도동) (우07233)</address>
+                    <p>홈페이지 관련 문의 : webw3@nanet.go.kr / 전화문의 : 02-788-4211, 080-788-4211(수신자 부담)</p>
+                    <p>Copyright ⓒ 대한민국 국회도서관 All rights reserved.</p>
+                </div>
+                <div class="banner">
+                    <a href="#" target="_blank"><img src="../img/btmBan01.png" alt="creative common"></a>
+                    <a href="#" target="_blank"><img src="../img/btmBan02.png" alt="웹 접근성 국가인증"></a>
+                    <a href="#" target="_blank"><img src="../img/btmBan03.png" alt="손말이음센터"></a>
+                </div>
+            </div>
+        </div>
+        <!-- //footer -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,181 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap');
+@import url(./reset.css);
+
+/* common */
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding:0}
+body,input,textarea,select,button,table{font-family:'Nanum Gothic','돋움','Dotum','AppleGothic',sans-serif;font-size:12px}
+img,fieldset{border:0}
+img{vertical-align:top}
+ul,ol{list-style:none}
+em,address{font-style:normal}
+hr{display: none;}
+a{text-decoration:none}
+a:hover,a:active,a:focus{text-decoration:underline}
+legend,.blind{position:absolute;left:0;top:-9999em;overflow: hidden}
+
+hr {
+    display: none;
+}
+.blind, legend {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -9999em;
+    overflow: hidden;
+}
+.skip a {
+    position: absolute;
+    left: 0;
+    top: -9999em;
+    z-index: 9999;
+    display: block;
+    width: 100%;
+    background-color: #05a4bc;
+    color: #FFF;
+    text-align: center;
+    line-height: 2.4;
+    text-decoration: none;
+}
+.skip a:focus {
+    top: 0;
+}
+.area {
+    width: 1140px;
+    margin: 0 auto;
+}
+.clearfix {
+    *zoom: 1;
+}
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.lh20 {
+    line-height: 20px !important;
+}
+.lh30 {
+    line-height: 30px !important;
+}
+.lh80 {
+    height: 80px !important;
+    line-height: 80px !important;
+}
+.lh100 {
+    height: 100px !important;
+    line-height: 100px !important;
+}
+.lh103 {
+    height: 103px !important;
+    line-height: 103px !important;
+}
+.w70 {
+    width: 70px !important;
+}
+.w120 {
+    width: 120px !important;
+}
+.pt10 {
+    padding-top: 10px;
+}
+/* //common */
+/* layout */
+#wrap {
+    min-width: 1140px;
+}
+/* //layout */
+/* header */
+#header {border-bottom: 1px solid #e5e5e5;}
+#header .util {position: relative; height: 100px; width: 1140px; margin: 0 auto;}
+#header .logo {position: absolute; left: 480px; width: 180px; padding: 35px 0;}
+#header img {width: 100%;}
+#header .utilL {position: absolute; top: 0; left: 0;}
+#header .utilL li {float: left; display: block; padding: 47px 5px;}
+#header .utilL li a {padding-right: 5px; color: #393939; font-size: 13px; letter-spacing: -0.05em;}
+#header .utilR {position: absolute; top: 0; right: 0;}
+#header .utilR .search {position: absolute; top: 35px; right: 44px; border: none;}
+#header .utilR input {width: 220px; padding: 10px 20px; height: 40px; font-size: 16px; line-height: 16px; color: #3e3d3d; background-color: #f4f4f4; border: 1px solid #d6d6d6; box-sizing: border-box;}
+#header .utilR .btn {position: absolute; top: 35px; right: 0; width: 40px; height: 40px; background-color: #627684;}
+#header .utilR button {margin: 10px; width: 20px; height: 20px; background: url(../img/searchBtn.png) no-repeat; border: none; text-indent: -9999em; box-sizing: border-box;}
+
+/* gnb */
+#gnb {border-bottom: 1px solid #e5e5e5;}
+#gnb .inn {height: 60px; width: 1140px; margin: 0 auto;}
+#gnb li {float: left; padding: 0 36px;}
+#gnb li a {display: block; font: bold 16px/60px 'Nanum Gothic',sans-serif; color: #333; text-align: center; text-decoration: none;}
+
+/* contents > step 01 */
+#contents {background-color: #d9d9d9; height: 1250px;}
+#contents .inn {position: relative; width: 1140px; margin: 0 auto;}
+#contents .aside {float: left; width: 24%; height: 1170px; background-color: #FFF;}
+#contents .aside h2 {height: 60px; background-color: #7388a7; font: bold 20px/60px 'Nanum Gothic',sans-serif; color: #FFF; text-align: center;}
+#contents .aside li {height: 50px; background-color: #f8f8f8; border-bottom: 3px solid #e5e8ec;}
+#contents .aside li a {padding-left: 15px; display: block; font: bold 16px/50px 'Nanum Gothic',sans-serif; color: #666; text-decoration: none;}
+#contents .aside li a:hover {border-bottom: 3px solid #7388a7; color: #333; background-color: #FFF;}
+#contents .content {position: absolute; right: 0; width: 74%; height: 1170px; background-color: #FFF;}
+#contents .contentTop {margin: 0 19px; border-bottom: 1px solid #476fad;}
+#contents .contentTop .memberH2 {padding-top: 20px; font: bold 22px 'Nanum Gothic',sans-serif; color: #383838;}
+#contents .contentTop ul {float: right;}
+#contents .contentTop li {float: left; padding: 0 0 4px 30px; margin-bottom: 3px;}
+#contents .contentTop li.c_t1 {position: relative; width: 17px; height: 13px; background: url(../img/icoHome.png) no-repeat 50%; text-indent: -9999em;}
+#contents .contentTop li.c_t1:after {position: absolute; right: -17px; top: 0; float: right; display: block; content: ''; width: 9px; height: 15px; background: url(../img/icoBar.png) no-repeat;}
+#contents .contentTop li.c_t2 {position: relative;}
+#contents .contentTop li.c_t2:after {position: absolute; right: -17px; top: 0; float: right; display: block; content: ''; width: 9px; height: 15px; background: url(../img/icoBar.png) no-repeat;}
+#contents .contentTop li.on a {color: #333}
+#contents .contentTop li a {font-size: 15px; color: #999; text-decoration: none;}
+#contents .contentBody {margin: 20px 19px;}
+#contents .contentBody .box img {width: 100%;}
+#contents .contentBody h3 {font-weight: bold; padding: 35px 0 20px; color: #476fad; font-size: 20px;}
+#contents .contentBody h4 {padding-bottom: 10px;}
+#contents .contentBody h4 strong {color: #ff0000;}
+#contents .contentBody .text {border: 1px solid #bbb; height: 400px; overflow-y: scroll;}
+#contents .contentBody .text p {margin: 20px 10px; font-size: 15px; line-height: 20px; color: #666;}
+#contents .contentBody fieldset .field01 {padding: 20px 0;}
+#contents .contentBody fieldset .field01 label {font-size: 16px;}
+#contents .contentBody .btn_area {text-align: center; padding: 20px;}
+#contents .contentBody .btn_area ul {display: inline-block;}
+#contents .contentBody .btn_area li {float: left; margin: 0 20px; width: 150px; height: 50px; border: 0; background-color: #476fad; color: #fff; font: normal 15px/50px 'Nanum Gothic',sans-serif; cursor: pointer;}
+#contents .contentBody .btn_area li a {display: block; color: #fff; text-decoration: none;}
+
+/* contents > step 02 */
+#contents .contentBody .contentCheck {position: relative; border: 1px solid #bbb; height: 200px; text-align: center;}
+#contents .contentBody .contentCheck ul {position: absolute; left: 50%; margin-left: -311px; display: flex; width: 300px; padding: 30px 0;}
+#contents .contentBody .contentCheck li {flex: 1; padding: 0 80px;}
+#contents .contentBody .contentCheck li:nth-child(1) {border-right: 1px solid #bbb;}
+#contents .contentBody .contentCheck li a {color: #fff; font: normal 15px/50px 'Nanum Gothic',sans-serif; text-decoration: none;}
+#contents .contentBody .contentCheck li img {padding-bottom: 10px;}
+#contents .contentBody .contentCheck li span {display: block; width: 150px; height: 50px; background-color: #476fad; cursor: pointer;}
+
+/* contents > step 03 */
+#contents .form_area fieldset {border-top: 1px solid #b5b9c0; margin-bottom: 35px;}
+#contents .form_area fieldset .field {overflow: hidden; border-bottom: 1px solid #dbdbdb;}
+#contents .form_area fieldset .field .label {float: left; width: 30%; height: 50px; padding-left: 30px; box-sizing: border-box; background-color: #f8f6f5; font-size: 15px; color: #383838; line-height: 50px; font-weight: bold;}
+#contents .form_area fieldset .field .label em {color: #ff0000; padding-right: 10px;}
+#contents .form_area fieldset .field .inp_area {position: relative; float: right; width: 70%; padding: 10px; box-sizing: border-box; font-size: 16px; letter-spacing: -1px;}
+#contents .form_area fieldset .field .inp_area .btn_button {position: absolute; left: 165px; width: 70px; height: 30px; background-color: #476fad; border: 0; box-sizing: border-box; color: #fff; font-size: 14px; cursor: pointer;}
+#contents .form_area fieldset .field .inp_field {border: 1px solid #999; width: 150px; height: 30px; background: #fff; box-sizing: border-box; text-indent: 10px; line-height: 30px;}
+#contents .form_area fieldset .field .desc {font-size: 14px;}
+#contents .contentBody .btn_area03 {text-align: center;}
+#contents .contentBody .btn_area03 ul {display: inline-block;}
+#contents .contentBody .btn_area03 li {float: left; margin: 0 20px; width: 150px; height: 50px; border: 0; background-color: #476fad; color: #fff; font: normal 15px/50px 'Nanum Gothic',sans-serif; cursor: pointer;}
+#contents .contentBody .btn_area03 li a {display: block; color: #fff; text-decoration: none;}
+
+/* contents > step 04 */
+#contents .contentBody .content_complete {border: 1px solid #bbb; height: 200px; margin-top: 30px; box-sizing: border-box; text-align: center;}
+#contents .contentBody .content_complete p {padding: 30px 0 10px; font-size: 16px; font-weight: bold; color: #476fad; margin: 30px 0;}
+#contents .contentBody .content_complete ul {display: inline-block; }
+#contents .contentBody .content_complete ul li {width: 100px; height: 40px; border: 0; background-color: #476fad;}
+#contents .contentBody .content_complete ul li a {display: block; line-height: 40px; color: #fff; font-size: 14px; cursor: pointer; text-decoration: none;}
+
+/* footer */
+#footer {width: 1140px; margin: 0 auto;}
+#footer ul {float: left; margin: 10px 0;}
+#footer ul li {display: inline; padding-right: 10px}
+#footer ul li a {font-size: 12px; line-height: 30px; color: #696969; padding-right: 10px;}
+#footer fieldset {float: right; position: relative;}
+#footer fieldset .btmSiteLink {margin: 10px 63px; width: 230px; height: 30px; background: #fff; box-sizing: content-box; line-height: 30px; box-sizing: border-box;}
+#footer fieldset button {position: absolute; top: 10px; right: 0; width: 60px; height: 30px;}
+#footer .footerBtm {margin-bottom: 30px;}
+#footer .copyright {float: left; color: #383838; line-height: 15px;}
+#footer .banner {float: right;}
