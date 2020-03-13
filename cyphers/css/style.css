@@ -1,0 +1,180 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,400,500,700&display=swap');
+
+/* common */
+html,body{width:100%;height:100%}
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding:0}
+body,input,textarea,select,button,table{font-family:'Noto Sans KR', sans-serif; font-size:16px}
+img,fieldset{border:0}
+img{vertical-align:top}
+ul,ol{list-style:none}
+em,address{font-style:normal}
+hr{display: none;}
+a{text-decoration:none}
+a:hover,a:active,a:focus{text-decoration:underline}
+legend,.blind{position:absolute;left:0;top:-9999em;overflow: hidden}
+.skip a{display:block;position:absolute;left:0;top:-9999em;z-index:9999;width:100%;background-color:#00aeef;color:#fff;font: 100 16px/1.8 'Noto Sans KR',sans-serif;text-align:center;text-decoration: none;}
+.skip a:focus{top:0}
+ 
+/* style */
+.area {width: 1140px; margin: 0 auto;}
+.clearfix {*zoom: 1;}
+.clearfix:after {content: ''; display: block; clear: both;}
+
+/* header */
+#header {position: relative; height: 100vh; margin: 0 auto; overflow: hidden; background-color: #f4f5f7;}
+#header .bar {position: fixed; top: 0; left: 0; width: 100%; height: 50px; background-color: #000; z-index: 10;}
+#header .mainImg {height: 100vh; background: url(./../img/main.jpg) no-repeat 50% 0 / 120%;}
+#header .logo {position: absolute; top: 10px; left: 50%; margin-left: -570px;}
+#header .login {position: absolute; right: 50%; margin-right: -570px; top: 0;}
+#header .login li {float: left; color: #aaa;}
+#header .login li a {padding: 0 10px; color: #aaa; line-height: 50px; text-decoration: none;}
+#header .login li a:hover {color: #fff;}
+#header .nav {position: fixed; top: 50px; left: 0; right: 0; height: 50px; background-color: rgba(0, 0, 0, 0.4); z-index: 100;}
+#header .nav .mn {position: absolute; left: 50%; margin-left: -570px;}
+#header .nav .mn .mnm {float: left;}
+#header .nav .mn .mnm > a {color: #ccc; padding: 0 15px; line-height: 50px; text-decoration: none; letter-spacing: -0.05em;}
+#header .nav .sn {display: none; width: 100%; position: absolute; z-index: 10;}
+#header .nav .sn.active {display: block;}
+#header .nav .sn .snm {float: left;}
+#header .nav .sn .snm a {display: block; font-size: 15px; color: #fff; text-decoration: none; padding: 0 10px; line-height: 50px;}
+#header .nav .sn .snm a:hover {color: #f4cc11;}
+/* main */
+#main {width: 1140px; margin: 0 auto;}
+#main .inn {position: absolute; top: 240px;}
+#main .mainContainer {position: relative; width: 1140px; display: flex;}
+#main .mainContainer li {flex: 1;}
+/* main-Text */
+#main .mainText {width: 50%; color: #fff; padding-top: 120px;}
+#main em {color: #f4cc11; font-weight: 100;}
+#main h2 {font-size: 4em; line-height: 1; font-weight: 500; padding-bottom: 80px;}
+#main .mainText p {width: 120px; border: 1px solid rgba(255, 255, 255, 0.7); line-height: 40px; letter-spacing: 0.02em; text-align: center; cursor: pointer; box-sizing: border-box;}
+#main .mainText a {color: rgba(255, 255, 255, 0.7); text-decoration: none;}
+#main .mainText a:hover {color: #fff;}
+/* main-Nav */
+#main .mainNav {width: 50%;}
+#main .mainNav .mainNav-inn {position: absolute; right: 0;}
+#main .mainNav li {color: #8f75b6; text-transform: uppercase; font-size: 14px; font-weight: 100; padding: 5px 0 0 10px; width: 130px; height: 130px; border: 1px solid #fff; box-sizing: border-box; cursor: pointer;}
+#main .mainNav li:hover {background-color: rgba(0, 0, 0, 0.6); transition: all 0.5s;}
+#main .mainNav li a {display: block; color: #fff; font-weight: 400; padding: 60px 10px 5px 0; text-align: right; text-decoration: none; font-size: 20px; letter-spacing: -0.02em;}
+#main .mainNav .navA {width: 390px; display: flex; flex-direction: row;}
+#main .mainNav .navA .Aa {flex: 1;}
+#main .mainNav .navA .Ab {flex: 1;}
+#main .mainNav .navA .Ac {flex: 1;}
+#main .mainNav .navB {width: 390px; display: flex; flex-direction: row; top: 249px;}
+#main .mainNav .navB .Ba {flex: auto;}
+#main .mainNav .navB .Bb {flex: auto;}
+#main .mainNav .navC {width: 390px; display: flex; flex-direction: row; top: 378px;}
+#main .mainNav .navC .Ca {flex: auto;}
+#main .mainNav .navC .Cb {flex: auto;}
+#main .mainNav .navD {width: 390px; display: flex; flex-direction: row; top: 507px;}
+#main .mainNav .navD .Da {flex: auto;}
+
+
+/* content */
+#content {background-color: #f4f5f7; text-align: center;}
+#content h2 {padding-top: 50px; font-size: 48px;}
+#content ul {padding-top: 30px; width: auto; display: flex; flex-direction: row;}
+#content ul li {flex: 1;  padding-bottom: 30px; padding: 5px;}
+#content ul li a {color: #333; text-decoration: none; letter-spacing: -0.02em;}
+#content ul li a img {width: 100%;}
+#content ul li strong {display: block; line-height: 35px; font-weight: 500; font-size: 20px; color: #000; padding: 5px 0;}
+#content p {margin-top: 30px; display: inline-block; margin-bottom: 50px; width: 190px; height: 45px; text-align: center; background-color: #00aeef; cursor: pointer;}
+#content p a {color: #fff; text-decoration: none; font-size: 20px; line-height: 45px;}
+#content p a:hover {display: block; color: #fff; background-color: rgba(109, 189, 243, 0.933);}
+
+
+
+/* notice */
+#notice {position: relative; margin: 50px 0;}
+#notice .noti {position: relative; float: left; margin-right: 20px;}
+#notice .noti h3 {font-size: 30px; line-height: 38px; margin-bottom: 25px;}
+#notice .noti li {border-bottom: 1px solid #ccc; width: 540px;}
+#notice .noti a {font-size: 18px; color: #333; line-height: 36px; text-decoration: none;}
+#notice .noti a:hover {color: #ccc;}
+#notice .noti small {float: right; line-height: 36px; color: #666;}
+#notice .noti p {position: absolute; top: 0; right: 0; width: 80px; border: 1px solid #ccc; line-height: 30px; text-align: center; cursor: pointer; box-sizing: border-box;}
+#notice .noti p a {color: #666; font-weight: 100; font-size: 14px; text-decoration: none; letter-spacing: 0.02em;}
+#notice .noti p a:hover {color: #bbb;}
+#notice .banner li {float: left; width: 25%;}
+#notice .banner li:first-child {margin-right: 5px;}
+#notice .banner li img {width: 100%;}
+#notice .banner li img:hover {opacity: 0.8;}
+
+
+/* newchar */
+#newchar {position: relative; height: 720px; background-color: #2F2F2F; text-align: center;}
+#newchar h2 {padding-top: 50px; font-size: 4em; font-weight: 100; color:#f4cc11;}
+#newchar .mc {display: flex; flex-wrap: wrap; justify-content: center; padding-top: 30px;}
+#newchar .mc .mcm {flex: 1;}
+#newchar .mc .mcm > a > img:hover {opacity: 0.6;}
+#newchar .mc .mcm strong {display: block; font-size: 30px;}
+#newchar .mc .mcm > ul {display: none;}
+#newchar .mc .mcm > ul.on {display: block; position: absolute; left: 50%; margin-left: -570px; top: 380px;}
+#newchar .mc .mcm > ul > li {float: left; color: #fff; margin-left: 265px;}
+#newchar .mc .mcm > ul > li:nth-child(2) {margin: 100px 0 0 50px;}
+
+
+/* footermenu */
+#footermenu {height: 70px; text-align: center;}
+#footermenu ul li {display: inline; line-height: 70px; margin: 20px;}
+#footermenu ul li a {color: #666; text-decoration: none;}
+
+
+/* footer */
+#footer {height: 370px; background-color: #f4f5f7;}
+#footer .btm {padding-top: 50px;}
+#footer .btm li {display: inline; padding-right: 5px; color: #333; font-size: 14px;}
+#footer .btm li a {color: #333; padding-right: 5px; text-decoration: none;}
+#footer .footerText {padding-top: 30px;}
+#footer p {color: #333; font-size: 14px; padding-bottom: 20px;}
+.family {
+    position: relative;
+    width: 140px;
+}
+.family dt .btn {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 30px;
+    border: 1px solid #aaa;
+    box-sizing: border-box;
+    background-color: #ededed;
+    text-indent: 10px;
+    text-align: left;
+    outline: none;
+    cursor: pointer;
+}
+.family dt .btn:after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    content: '';
+    display: block;
+    height: 30px;
+    width: 30px;
+    background: url(../img/ico-down.png) no-repeat 50%;
+}
+.family dt .btn.active:after {
+    background-image: url(../img/ico-up.png);
+}
+.family dd {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 29px;
+    height: 150px;
+    overflow: auto;
+    /* overflow-y: scroll;  */
+    border: 1px solid #aaa;
+    background-color: #ededed;
+}
+.family dd ul li a {
+    display: block;
+    border-bottom: 1px solid #ddd;
+    line-height: 30px;
+    text-indent: 15px;
+    color: #333;
+    text-decoration: none;
+}
+#footer .footerBanner li {float: left; margin: 30px 20px 0 0;}
