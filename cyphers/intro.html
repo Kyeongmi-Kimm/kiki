@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>액션본능! 사이퍼즈</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,400,500,600,700&display=swap" rel="stylesheet">
+    <style>
+        * {margin:0;padding:0}
+        html,body{width:100%;height:100%}
+        body,input,textarea,select,button,table{font-family:'Noto Sans KR', sans-serif; font-size: 14px}
+        img,fieldset{border:0}
+        img{vertical-align:top}
+        ul,ol{list-style:none}
+        em,address{font-style:normal}
+        hr{display: none;}
+        a{text-decoration:none}
+        a:hover,a:active,a:focus{text-decoration:underline}
+
+        h1 {padding: 30px; font-size: 28px;}
+        h2 {padding: 10px 30px; font-size: 18px;}
+        li {padding-left: 30px; line-height: 30px;}
+
+        table{
+    width:100%;
+    border-top:1px solid #000;
+    border-bottom:1px solid #000;
+    border-collapse:collapse;
+    margin: 50px 0;
+}
+
+table caption{
+    position:absolute;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    border:0;
+    clip:rect(1px, 1px, 1px, 1px);
+}
+
+table th{
+    background:#f4f4f4;
+    color:#222;
+    padding:20px 0;
+    border-bottom:1px solid #e1e1e1;
+    border-right:1px solid #e1e1e1;
+}
+table th:last-child{
+    border-right:0;
+}
+
+table tbody > tr{
+    border-bottom:1px solid #e1e1e1;
+}
+table tbody > tr:last-child{
+    border-bottom:0;
+}
+
+table td{
+    padding:20px;
+    font-weight:300;
+    text-align:left;
+    line-height:1.6;
+    border-right:1px solid #e1e1e1;
+}
+
+table td:last-child{
+    border-right:0;
+}
+    </style>
+</head>
+<body>
+    <h1>사이퍼즈 반응형 웹사이트 리디자인</h1>
+    <div class="info">
+        <h2>제작기간</h2>
+        <ul>
+            <li>7일</li>
+        </ul>
+        <h2>참여율</h2>
+        <ul>
+            <li>개인제작 100%</li>
+        </ul>
+        <h2>개발 목표</h2>
+        <ul>
+            <li>기존의 정보집약적인 사이트 디자인에서 벗어나 가독성을 최대한 드러내도록 리디자인</li>
+            <li>다양한 기기에서 해상도에 맞게 최적화 될 수 있는 반응형 웹사이트로 리뉴얼하여 여러 환경의 사용자들에게 편안한 경험을 제공</li>
+            <li>따로 브랜드 어플을 사용하지 않더라도 웹에서 필요한 정보를 편리하게 얻을 수 있도록 sub nav를 기획</li>
+        </ul>
+        <h2>개발 환경</h2>
+        <ul>
+            <li>html5, css3, j-query, java-script</li>
+        </ul>
+        <h2>눈여겨 봐야 할 기능</h2>
+        <ul>
+            <li>화면을 줄이거나 늘렸을때도 제공되는 내용이 사라지지 않도록 반응형 디자인 구현</li>
+            <li>main nav mouse over 활성화</li>
+            <li>재미있는 버튼들</li>
+            <li>table을 사용하지 않고 일일히 div로 width size를 계산하여 제작한 sub nav</li>
+            <li>스크롤을 내렸을 때 발생하는 패럴렉스 효과</li>
+            <li>AOS 라이브러리를 사용한 스크롤 효과</li>
+            <li>NEW CHARACTER section 캐릭터 썸네일 마다 mouse over 활성화</li>
+            <li>패밀리 사이트로 이동 버튼 구현</li>
+        </ul>
+    </div>
+    <table>
+        <caption>사이퍼즈 퍼블리싱 포트폴리오 표</caption>
+        <colgroup>
+            <col style="width:12%">
+            <col style="width:12%">
+            <col style="width:12%">
+            <col style="width:20%">
+            <col style="width:20%">
+            <col style="width:24%">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Depth1</th>
+                <th>Depth2</th>
+                <th>Depth3</th>
+                <th>페이지</th>
+                <th>파일</th>
+                <th>비고</th>
+            </tr>
+        </thead>
+    
+        <tbody>
+            <tr>
+                <td>사이퍼즈</td>
+                <td></td>
+                <td></td>
+                <td>사이퍼즈 메인</td>
+                <td><a href="index.html" target="_blank" title="새 창 열림">main.html</a></td>
+                <td>마크업 유효성 검사를 위한 html validator 통과</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
