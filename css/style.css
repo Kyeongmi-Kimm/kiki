@@ -1,3 +1,4 @@
+@charset "utf-8";
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700&display=swap');
 
@@ -173,7 +174,7 @@ a {text-decoration: none;}
   .hover_wrap .effect .back {
       position: absolute; left: 0; top: 0; text-align: center;
   }
-  .hover_wrap .effect figcaption {
+  .hover_wrap .effect .figcaption {
     opacity: 0;
     position: absolute; bottom: 0; left: 105%;
     width: 0;
@@ -185,14 +186,14 @@ a {text-decoration: none;}
     padding: 5px 0;
     transition: 1s ease-in-out;
   }
-  .hover_wrap .effect figcaption h3 {
+  .hover_wrap .effect .figcaption h3 {
     padding-left: 25px; padding-top: 20px; font: 16px 'NotoSansKR', sans-serif; font-weight: bold;
   }
-  .hover_wrap .effect figcaption p {
+  .hover_wrap .effect .figcaption p {
     padding-left: 25px; padding-right: 30px;  font: 14px 'NotoSansKR', sans-serif; font-weight: 100;
   }
 
-  .hover_wrap .effect.show figcaption {
+  .hover_wrap .effect.show .figcaption {
     opacity: 1;
     width: 50vw;
     background: rgba(0,0,0,0.5);
