@@ -61,7 +61,7 @@
 /* works */
     .button.button--aylen {background: rgba(0, 0, 0, 0.8);}
 
-    #contents .works {height: 280vh;}
+    #contents .works {height: 300vh;}
     #contents .works h1 {padding-top: 50px; font-size: 2.5rem; line-height:4rem;}
 
     .hover_wrap {top: 10%; left: 50%;}
