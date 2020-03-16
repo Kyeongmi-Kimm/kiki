@@ -1,67 +1,4 @@
-//imageProgress
-function imagesProgress(){
-  var $container = $("#progress"),
-      $progressBar = $container.find(".bubble"),
-      $progressText = $container.find(".progress-text"),
-      imgLoad = imagesLoaded("body"),	
-      imgTotal = imgLoad.images.length,	
-      imgLoaded = 0,										
-      current = 0,							
-      progressTimer = setInterval(updateProgress, 1000 / 60);
 
-  imgLoad.on("progress", function(){
-      imgLoaded++;
-  });
-
-  function updateProgress(){
-      var target = ( imgLoaded / imgTotal) * 100;
-
-      current += ( target - current) * 0.1;
-      $progressText.text( Math.floor(current) + '%' );
-
-      if(current >= 100){
-          clearInterval(progressTimer);
-          //$container.addClass("progress-complete");
-          $progressBar.add($progressText)
-              .delay(500)
-              .animate({opacity: 0},100,function(){
-                  $container.animate({top: '-110%'},1000,'easeInOutQuint');
-              });
-          $("body").addClass("active");
-      }
-      if(current > 99.98){
-          current = 100;
-      }
-  }	
-}
-
-
-// 메뉴이동
-
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
 
 //menu-ico
 $('document').ready(function () {
@@ -122,13 +59,9 @@ $(window).scroll(function(){
       works.addClass("show");
   }else{works.removeClass("show");}
 
-  if(wScroll >= cont.eq(2).offset().top -100){
+  if(wScroll >= cont.eq(2).offset().top -200){
       menuBtn.removeClass("show");
       works.removeClass("show");
-  }
-  if(wScroll >= cont.eq(3).offset().top -100){
-      menuBtn.removeClass("show");
-      menuBtn.eq(0).addClass("show");
   }
 });
 
@@ -142,9 +75,9 @@ $(window).scroll(function(){
   
   let num = 0;
 
-  window.addEventListener('scroll', function() {
-    scrollElem.innerHTML = window.pageYOffset;
-  });
+  // window.addEventListener('scroll', function() {
+  //   scrollElem.innerHTML = window.pageYOffset;
+  // });
 
   function showValue() {
     let posY = aboutElem.getBoundingClientRect().top;
