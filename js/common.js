@@ -1,5 +1,3 @@
-
-
 //menu-ico
 $('document').ready(function () {
     var Closed = false;
@@ -70,7 +68,7 @@ $(window).scroll(function(){
 
 (function() {
 
-  const scrollElem = document.querySelector('.scroll-position');
+  // const scrollElem = document.querySelector('.scroll-position');
   const aboutElem = document.querySelector('#about > h1');
   
   let num = 0;
