@@ -383,11 +383,7 @@
 /* Common button styles */
 .button {
 	float: left;
-	min-width: 150px;
-	max-width: 250px;
 	display: block;
-	margin: .8em;
-	padding: 1em 2em;
 	border: none;
 	background: none;
 	color: inherit;
@@ -443,7 +439,8 @@
 /* Individual button styles */
 /* Nina */
 .button--nina {
-	padding: 0 2em;
+  padding: 0 2em;
+  width: 150px;
 	background: #333;
 	color: #fff;
 	overflow: hidden;
@@ -535,11 +532,13 @@
 
 /* Aylen */
 .button.button--aylen {
+  width: 150px;
 	background: rgba(255, 255, 255, 0.2);
 	color: #fff;
 	overflow: hidden;
 	-webkit-transition: color 0.3s;
-	transition: color 0.3s;
+  transition: color 0.3s;
+  text-align: center;
 }
 .button--aylen.button--inverted {
 	background: none;
