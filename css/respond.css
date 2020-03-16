@@ -50,7 +50,7 @@
 
     .cube {display: none;}
 /* about */
-    #contents .about {height: 280vh;}
+    #contents .about {height: 300vh;}
     #contents .about h1 {padding-top: 110px; font-size: 2.5rem;}
     #contents .about h1.on {padding-top: 180px;}
     #contents .text-box {top: 35%; width: 60vw;}
@@ -61,7 +61,7 @@
 /* works */
     .button.button--aylen {background: rgba(0, 0, 0, 0.8);}
 
-    #contents .works {height: 250vh;}
+    #contents .works {height: 280vh;}
     #contents .works h1 {padding-top: 50px; font-size: 2.5rem; line-height:4rem;}
 
     .hover_wrap {top: 10%; left: 50%;}
