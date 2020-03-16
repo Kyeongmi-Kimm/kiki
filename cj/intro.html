@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CJ One</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,400,500,600,700&display=swap" rel="stylesheet">
+    <style>
+        * {margin:0;padding:0}
+        html,body{width:100%;height:100%}
+        body,input,textarea,select,button,table{font-family:'Noto Sans KR', sans-serif; font-size: 14px}
+        img,fieldset{border:0}
+        img{vertical-align:top}
+        ul,ol{list-style:none}
+        em,address{font-style:normal}
+        hr{display: none;}
+        a{text-decoration:none}
+        a:hover,a:active,a:focus{text-decoration:underline}
+
+        h1 {padding: 30px; font-size: 28px;}
+        h2 {padding: 10px 30px; font-size: 18px;}
+        li {padding-left: 30px; line-height: 30px;}
+
+        table{
+    width:100%;
+    border-top:1px solid #000;
+    border-bottom:1px solid #000;
+    border-collapse:collapse;
+    margin: 50px 0;
+}
+
+table caption{
+    position:absolute;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    border:0;
+    clip:rect(1px, 1px, 1px, 1px);
+}
+
+table th{
+    background:#f4f4f4;
+    color:#222;
+    padding:20px 0;
+    border-bottom:1px solid #e1e1e1;
+    border-right:1px solid #e1e1e1;
+}
+table th:last-child{
+    border-right:0;
+}
+
+table tbody > tr{
+    border-bottom:1px solid #e1e1e1;
+}
+table tbody > tr:last-child{
+    border-bottom:0;
+}
+
+table td{
+    padding:20px;
+    font-weight:300;
+    text-align:left;
+    line-height:1.6;
+    border-right:1px solid #e1e1e1;
+}
+
+table td:last-child{
+    border-right:0;
+}
+    </style>
+</head>
+<body>
+    <h1>CJ One 메일 발송 페이지 제작</h1>
+    <div class="info">
+        <h2>제작기간</h2>
+        <ul>
+            <li>1일</li>
+        </ul>
+        <h2>참여율</h2>
+        <ul>
+            <li>개인제작 100%</li>
+        </ul>
+        <h2>개발 목표</h2>
+        <ul>
+            <li>기존의 메일 홍보용 페이지를 table과 area tag를 사용하여 카피</li>
+        </ul>
+        <h2>개발 환경</h2>
+        <ul>
+            <li>html5, css3, j-query, java-script</li>
+        </ul>
+        <h2>눈여겨 봐야 할 기능</h2>
+        <ul>
+            <li>브랜드 로고 클릭시 해당 사이트로 이동할수 있도록 a tag 삽입</li>
+            <li>table 내에서 img가 magin과 padding의 영향을 받지않고 자연스럽게 보이도록 디자인</li>
+        </ul>
+    </div>
+    <table>
+        <caption>밀리의서재 퍼블리싱 포트폴리오 표</caption>
+        <colgroup>
+            <col style="width:12%">
+            <col style="width:12%">
+            <col style="width:12%">
+            <col style="width:20%">
+            <col style="width:20%">
+            <col style="width:24%">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Depth1</th>
+                <th>Depth2</th>
+                <th>Depth3</th>
+                <th>페이지</th>
+                <th>파일</th>
+                <th>비고</th>
+            </tr>
+        </thead>
+    
+        <tbody>
+            <tr>
+                <td>cj one 홍보용 페이지</td>
+                <td></td>
+                <td></td>
+                <td>cj one 메인</td>
+                <td><a href="cj_index.html" target="_blank" title="새 창 열림">main.html</a></td>
+                <td>마크업 유효성 검사를 위한 html validator 통과</td>
+            </tr>
+    
+        </tbody>
+    </table>
+</body>
+</html>
