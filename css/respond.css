@@ -67,7 +67,7 @@
 
     .hover_wrap {top: 10%; left: 50%;}
     .hover_wrap .effect {margin: 20px;}
-    .hover_wrap .effect figcaption {display: none;}
+    .hover_wrap .effect .figcaption {display: none;}
 /* contact */
     #contents .contact:after {height: 100px;}
     #contents .contact {height: 120vh;}
