@@ -33,7 +33,7 @@ a {text-decoration: none;}
 
 #header .home {position: absolute; top: 28%; left: 18%;}
 #header .home h1 {color: #f9dd6b; font-family: 'Montserrat', sans-serif; font-size: 8rem; line-height: 11rem;}
-#header .home h2 {color: #7a55e7; font-family: 'Montserrat', sans-serif; font-size: 7rem;}
+#header .home h2 {color: #7a55e7; font-family: 'Montserrat', sans-serif; font-size: 7rem; z-index: 101;}
 
 
 /* section2-cube */
