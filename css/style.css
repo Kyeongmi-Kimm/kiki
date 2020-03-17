@@ -131,7 +131,7 @@ a {text-decoration: none;}
 }
 
 /* contents */
-#contents .about:after {content: ''; width: 100%; height: 200px; background: #f9dd6b; position: absolute; top: -95px; left: 0; transform: skew(0,-5deg); z-index: 100;}
+#contents .about:after {content: ''; width: 100%; height: 200px; background: #f9dd6b; position: absolute; top: -92px; left: 0; transform: skew(0,-5deg); z-index: 100;}
 #contents .about {position: relative; width: 100%; height: 200vh; background-color: #7a55e7;}
 #contents .about h1 {opacity: 0; transition: 1s; padding-top: 150px; color: #fff; font-size: 4rem; font-weight: 500; line-height: 8rem; text-align: center;}
 #contents .about h1.on {opacity: 1; padding-top: 280px; transition: 1s;}
@@ -223,7 +223,7 @@ a {text-decoration: none;}
 
 
 /* contact */
-#contents .contact:after {content: ''; width: 100%; height: 200px;background: #7a55e7; position: absolute; top: -95px; left: 0; transform: skew(0,-5deg); z-index: 100;}
+#contents .contact:after {content: ''; width: 100%; height: 200px;background: #96bfe6; position: absolute; top: -92px; left: 0; transform: skew(0,-5deg); z-index: 100;}
 #contents .contact {position: relative; width: 100%; height: 100vh; background-color: #7a55e7;}
 #contents .contact .inn {width: 1050px; margin: 0 auto;}
 #contents .contact .inn .form-area {width: 350px; position: absolute; top: 48%; left: 50%; transform: translateX(-50%) translateY(-50%);}
