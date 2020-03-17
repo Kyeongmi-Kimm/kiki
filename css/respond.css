@@ -17,7 +17,7 @@
     #header .menu > ul > li {padding: 1.2em}
     #header .menu > ul > li > a {font-size: 14px;}
 
-    #header .menu {right: 50%;}
+    #header .menu {right: 20%;}
 
     #header .home {position: absolute; top: 38%; left: 18%;}
     #header .home h1 {font-size: 6rem; line-height: 8rem; word-break: break-all;}
@@ -41,7 +41,7 @@
     #header .menu > ul > li {padding: 1.2em}
     #header .menu > ul > li > a {font-size: 14px;}
 
-    #header .menu {left: 0;}
+    #header .menu {right: 26%;}
 
     #header .home {position: absolute; top: 38%; left: 18%;}
     #header .home h1 {font-size: 4rem; line-height: 6rem; word-break: break-all;}
