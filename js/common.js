@@ -1,3 +1,25 @@
+//main
+setTimeout(function() {
+  document.querySelector('#header .main .first').classList.add('show');
+}, 1000);
+setTimeout(function() {
+  document.querySelector('#header .main .second').classList.add('show');
+}, 1500);
+setTimeout(function() {
+  document.querySelector('#header .main .third').classList.add('show');
+}, 2000);
+setTimeout(function() {
+  document.querySelector('#header .main .fourth').classList.add('show');
+}, 2500);
+setTimeout(function() {
+  document.querySelector('#header .aside').classList.add('show');
+}, 3000);
+setTimeout(function() {
+  document.querySelector('#header .menu-ico').classList.add('on');
+}, 3000);
+
+clearTimeout()
+
 //menu-ico
 $('document').ready(function () {
     var Closed = false;
