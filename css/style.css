@@ -85,7 +85,7 @@ a {text-decoration: none;}
 
 /* works */
 #contents .works:after {content: ''; width: 100%; height: 200px; background: #f9dd6b; position: absolute; top: -100px; left: 0; transform: skew(0,-5deg); z-index: 100;}
-#contents .works {position: relative; width: 100%; height: 230vh; background-color: #f9dd6b;}
+#contents .works {position: relative; width: 100%; height: 235vh; background-color: #f9dd6b;}
 #contents .works h1 {padding-top: 150px; color: #7a55e7; font-size: 4rem; font-weight: bold; line-height: 8rem; text-align: center;}
 #contents .works .work-btn {position: absolute; padding-top: 10px; left: 90%; transform: translateX(-50%);}
 #contents .works .work-btn a {display: block; color: #fff; line-height: 30px; width: auto; padding: .5em 2em;}
