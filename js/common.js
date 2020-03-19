@@ -18,8 +18,6 @@ setTimeout(function() {
   document.querySelector('#header .menu-ico').classList.add('on');
 }, 3000);
 
-clearTimeout()
-
 //menu-ico
 $('document').ready(function () {
     var Closed = false;
