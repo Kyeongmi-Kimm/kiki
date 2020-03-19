@@ -65,7 +65,7 @@
         #contents .about h1.on {padding-top: 180px;}
         #contents .text-box {top: 35%; width: 60vw;}
         #contents .text-box .text-title {padding-top: 50px; padding-bottom: 70px;}
-        #contents .text-box p {font-size: 3.5rem; line-height: 3rem;}
+        #contents .text-box p {font-size: 3.5rem; line-height: 3.8rem;}
         #contents .text-box b {padding-top: 40px; font-size: 1.7rem;}
         #contents .text-box span {font-size: 14px; line-height: 1.7rem;}
     /* works */
@@ -79,7 +79,7 @@
         .hover_wrap .effect {margin: 20px;}
         .hover_wrap .effect .figcaption {display: none;}
     /* contact */
-        #contents .contact {height: 140vh;}
+        #contents .contact {height: 110vh;}
         #contents .contact .inn h1 {font-size: 2.5rem;}
         #contents .contact .inn .form-area {width: 230px; top: 50%; font-size: 12px/1.8em;}
         #contents .contact .inn input {width: 230px; padding: 3px; font-size: 12px/1.8em;}
